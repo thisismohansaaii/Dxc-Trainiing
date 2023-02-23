@@ -1,0 +1,13 @@
+
+
+Set-Location D:/
+Get-ChildItem PowerShell
+Get-ChildItem MyDir1
+Get-ChildItem MyDir11
+Set-Location "D:\PowerShell\MyDir1\MyDir11"
+New-Item -ItemType File -Path "D:\PowerShell\MyDir1\MyDir11\MyFile01.txt"
+New-Item -ItemType File -Path "D:\PowerShell\MyDir1\MyDir11\MyFile02.txt"
+New-Item -ItemType File -Path "D:\PowerShell\MyDir1\MyDir11\MyFile03.doc"
+New-Item -ItemType File -Path "D:\PowerShell\MyDir1\MyDir11\MyFile04.doc"
+Copy-Item "D:\PowerShell\MyDir1\MyDir11\*.txt" "D:\PowerShell\MyDir3\MyDir31"
+Copy-Item "D:\PowerShell\MyDir1\MyDir11\*.txt" "D:\PowerShell\MyDir3\MyDir32"
